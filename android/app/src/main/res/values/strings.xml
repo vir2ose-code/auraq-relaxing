@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Auraq Meditation</string>
+    <string name="title_activity_main">Auraq Meditation</string>
+    <string name="package_name">com.vir2ose.auraq</string>
+    <string name="custom_url_scheme">com.vir2ose.auraq</string>
+</resources>
