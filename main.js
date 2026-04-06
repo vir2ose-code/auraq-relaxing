@@ -714,3 +714,26 @@ if (contactForm) {
   });
 }
 
+// ── LANDING PAGE BUTTON LOGIK ──
+const btnHeroDiveIn = document.getElementById('btnHeroDiveIn');
+const btnHeroDiscovery = document.getElementById('btnHeroDiscovery');
+
+if (btnHeroDiveIn) {
+  btnHeroDiveIn.addEventListener('click', () => {
+    const menuMed = document.getElementById('menuMeditationen');
+    if (menuMed) {
+      menuMed.click();
+      const playerSec = document.querySelector('.player-wrap');
+      if (playerSec) playerSec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+}
+
+if (btnHeroDiscovery) {
+  btnHeroDiscovery.addEventListener('click', () => {
+    const featSec = document.getElementById('featuresSection');
+    if (featSec) featSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
+
+
