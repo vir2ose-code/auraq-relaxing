@@ -7,7 +7,7 @@
 
 ---
 
-## ✨ Features
+##  Features
 
 - **✧ 432 Hz Audio Experience:** Alle Tracks sind in der heilenden 432 Hz Frequenz produziert.
 - **✧ Native PWA Feeling:** Als App auf Android und iOS installierbar mit Offline-Unterstützung.
@@ -17,7 +17,7 @@
 
 ---
 
-## 🛠️ Technologie & Stack
+##  Technologie & Stack
 
 - **Core:** HTML5, Vanilla CSS3, Modern JavaScript (ES6+)
 - **Build Tool:** [Vite](https://vitejs.dev/)
@@ -26,7 +26,7 @@
 
 ---
 
-## 🚀 Installation & Deployment
+##  Installation & Deployment
 
 1. **Repository klonen:**
    ```bash
@@ -43,7 +43,7 @@
 
 ---
 
-## 📱 Mobile Installation (PWA)
+##  Mobile Installation (PWA)
 
 Die App kann direkt über den Browser installiert werden:
 1. Öffne [auraq-relaxing.com](https://auraq-relaxing.com) auf deinem Smartphone.
@@ -51,7 +51,7 @@ Die App kann direkt über den Browser installiert werden:
 
 ---
 
-## ⚖️ License & Copyright
+##  License & Copyright
 
 © 2026 **AURAQ by vir2ose**. Alle Rechte vorbehalten. 
 Die Audio-Produktionen sind urheberrechtlich geschützt.
