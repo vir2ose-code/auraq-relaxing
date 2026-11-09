@@ -508,7 +508,7 @@ if (menuSchlafmusik) {
   menuSchlafmusik.addEventListener('click', (e) => {
     e.preventDefault();
     playlist = [
-      { name: '432 Goodnight Long', url: '/audio/schlafmusik/432 Goodnight LONG.mp3' }
+      { name: '432 Goodnight Long', url: '/audio/meditationen/432 Goodnight LONG.mp3' }
     ];
     currentIndex = 0;
     playTrack(0);
