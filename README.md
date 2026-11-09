@@ -57,4 +57,4 @@ Die App kann direkt über den Browser installiert werden:
 Die Audio-Produktionen sind urheberrechtlich geschützt.
 
 ---
-*Created with ❤️ by Antigravity for Waldemar Krucinski*
+❤️ by Waldemar Krucinski
