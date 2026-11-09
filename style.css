@@ -688,11 +688,43 @@ nav {
   margin-bottom: 22px;
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.45);
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
 }
-/* Logo inside player art */
-.player-art-logo { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.player-art.has-video {
+  box-shadow: 0 16px 40px rgba(0,0,0,0.6), 0 0 30px rgba(201,168,76,0.25);
+}
+/* Video inside player art */
+.player-art-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  pointer-events: none;
+}
+.player-art.has-video .player-art-video {
+  opacity: 1;
+}
+/* Logo & rings inside player art */
+.player-art-logo {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column;
+  z-index: 2; pointer-events: none; transition: opacity 0.8s ease-in-out;
+}
 .player-art-logo svg { width: 90px; opacity: 0.6; animation: logoGlow 6s ease-in-out infinite; }
-.player-art-rings { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.player-art-rings {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  z-index: 2; pointer-events: none; transition: opacity 0.8s ease-in-out;
+}
+.player-art.has-video .player-art-logo,
+.player-art.has-video .player-art-rings {
+  opacity: 0;
+}
 .aring { position: absolute; border-radius: 50%; border: 1.5px solid rgba(201,168,76,0); left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; }
 .aring.active { animation: ripple 3.5s linear infinite; }
 .aring.active:nth-child(1) { animation-delay: 0s; }

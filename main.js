@@ -400,6 +400,18 @@ function updateWaveState(playing) {
     if (playing) a.classList.add('active');
     else a.classList.remove('active');
   });
+
+  // Kosmisches Video im Media-Player Fenster steuern
+  const playerArt = document.getElementById('playerArt');
+  const playerArtVideo = document.getElementById('playerArtVideo');
+  if (playerArt && playerArtVideo) {
+    if (playing) {
+      playerArt.classList.add('has-video');
+      playerArtVideo.play().catch(e => console.warn('Player video play:', e));
+    } else {
+      playerArtVideo.pause();
+    }
+  }
 }
 
 // Buttons updaten
@@ -737,3 +749,11 @@ if (btnHeroDiscovery) {
 }
 
 
+
+  // Klick auf Player-Artwork schaltet Play/Pause um
+  const pArtEl = document.getElementById('playerArt');
+  if (pArtEl) {
+    pArtEl.addEventListener('click', () => {
+      window.toggleAudio();
+    });
+  }
