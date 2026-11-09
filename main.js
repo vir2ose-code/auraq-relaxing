@@ -1,4 +1,4 @@
-import './style.css';
+// CSS is loaded via link tag in index.html
 // ── SERVICE WORKER FÜR PWA (NATIVE FEEL) ──
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
